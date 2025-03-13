@@ -75,11 +75,11 @@ $\phi_i$: Integer variable which defines the phase of task with index $i$
 
 ### Constraints
 
-$$\sum_{0\leq t<n} F_{ij}\leq f\qquad \forall\; 0\leq i<F$$
+$$ \sum_{0 \leq t < n} F_{ij}\leq f \qquad \forall 0 \leq I < F $$
 
-$$ \sum_{0\leq j\leq i} F_{jt}\leq \frac{i\cdot f -\phi_t}{T_t} +1 \qquad \forall \; 0\leq i<F,  0\leq t<n$$
+$$ \sum_{0\leq j\leq i} F_{jt}\leq \frac{i\cdot f -\phi_t}{T_t} +1 \qquad \forall  0 \leq i < F,  0\leq t < n $$
 
-$$ \sum_{0\leq j\leq i} F_{jt}\geq \frac{(i+2)\cdot f -\phi_t -D_t}{T_t} \qquad \forall \; 0\leq i<F,  0\leq t<n$$
+$$ \sum_{0\leq j\leq i} F_{jt}\geq \frac{(i+2)\cdot f -\phi_t -D_t}{T_t} \qquad \forall  0 \leq i < F,  0 \leq t< n $$
 
 The first constraint guarantees that we do not over-fill any frame. The second and third constraints guarantee that each task instance is scheduled in a frame that start no earlier than the arrival time, and a frame that ends no later than the deadline.
 
