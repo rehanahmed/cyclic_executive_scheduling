@@ -75,7 +75,7 @@ $\phi_t$: Integer variable which defines the phase of task with index $t$
 
 ### Constraints
 
-$$ \sum_{0 \leq t < n} F_{it}\leq f \qquad \forall 0 \leq i < F $$
+$$ \sum_{0 \leq t < n} F_{it}\cdot C_t\leq f \qquad \forall 0 \leq i < F $$
 
 $$ \sum_{0\leq j\leq i} F_{jt}\leq \frac{i\cdot f -\phi_t}{T_t} +1 \qquad \forall  0 \leq i < F,  0\leq t < n $$
 
